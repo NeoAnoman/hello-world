@@ -1,0 +1,279 @@
+<!doctype html>
+<!--Food Order and Login Page-->
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+	img
+{ 
+	width:100x;
+	height:100px;
+	float:center-left;
+
+}
+h1
+{/*Used for styling the name of the cafe*/
+	font-size:250%;
+	font-family:curlz mt;
+	color:rgb(190,120,100);
+}
+h3
+{
+	font-size:150%;
+	font-family:curlz mt;
+	color:rgb(200,190,190);
+	float:center;
+}
+h2
+{
+	font-size:155%;
+	font-family:curlz mt;
+	color:rgb(170,180,250);
+}
+input[type="checkbox"]
+{
+  zoom:1.5;
+}
+input[type="textbox"]
+{
+	font-family:curlz mt;
+	width:50%;
+	height:90%;
+}
+input[type="text"]
+{
+	font-family:curlz mt;
+	zoom:1.5;
+}
+input[type="radio"]
+{
+	zoom:1.5;
+}
+input[type="email"]
+{
+	font-family:curlz mt;
+	zoom:1.5;
+}
+input[type="number"]
+{
+	font-family:curlz mt;
+	zoom:1.5;
+}
+
+.checkboxtext
+{
+  /* Checkbox text */
+  font-size: 110%;
+  display:inline;
+}
+.textw
+{	/*Styled similar to that of check box text for different input types*/
+	font-family:curlz mt;
+	font-size:200%;
+	display:inline;
+	color:rgb(200,190,190);
+}
+.cream
+{   /*Class used for caption*/
+	font-size:190%;
+	font-family:curlz mt;
+	color:rgb(200,150,190);
+}
+.cart
+{
+	/*Class used for caption*/
+	font-size:210%;
+	 display:inline;
+	color:rgb(150,20,10);
+	font-family:curlz mt;
+}
+body
+{/*Used for background color*/
+	background-color:rgb(15,20,10);
+}
+table
+{/*used for adjusting width of the table*/
+	width:80%;
+}
+td
+{	/*Table data is designed using this */
+	color:rgb(200,50,135);
+	font-size:100%;
+	font-family:curlz mt;
+}
+	</style>
+	<script type="text/javascript">
+	function check1()//for checking name
+{
+	var name2=document.getElementById("name1").value;
+	if(name2=="")
+		alert("Name should not be left blank");
+	return false;
+	
+}
+function check2()//for checking phone number
+{
+	var name2=document.getElementById("pno").value;
+	if(name2=="")
+		alert("Phone number should not be left blank");
+	return false;
+}
+function checkpass()//for checking password
+{
+	var name2=document.getElementById("pass").value;
+	var name3=document.getElementById("passr").value;
+	if(name2!=name3)
+		alert("Passwords did'nt match");
+	return false;
+}
+function otp()//an alert message to notify that OTP is sent
+{
+	alert("OTP sent to your phone number");
+}
+function loginid()//Login Id is alerted again by using alert in this function
+{
+	var n1=document.getElementById("name1").value;
+	var n=document.getElementById("dob").value;
+	
+	var l= n1+n;
+	alert("Login id:"+l);
+}
+	
+	</script>
+</head>
+<body>
+	<form>
+		<table>
+		<h1>CFC: Cinderalla's Frozen Cafe</h1>
+<caption class="cream">Menu(Select items)</caption>
+	<tr>
+				<td rowspan="2"><h2>Ice Creams:</h2></td>
+				<td rowspan="2"><input type="checkbox"><span class="checkboxtext">Fruit Basket-4$</span>
+				<img src="https://www.zastavki.com/pictures/originals/2017Food___Cakes_and_Sweet_Fruit_ice_cream_balls_with_a_waffle_basket_with_fresh_berries_116854_.jpg" 
+				alt="fruit basket">
+				</td>
+				<td rowspan="2"><input type="checkbox"><span class="checkboxtext">Berry Berry-6$</span>
+				<img src="https://www.allergicliving.com/wp-content/uploads/2014/07/ThinkstockPhotos-178983190-1-e1495639612999.jpg" alt="strawberry">
+				</td>
+				<td rowspan="2"><input type="checkbox"><span class="checkboxtext">Buttery-5$</span>
+				<img src="http://www.afternoonexpress.co.za/website/admin/UserFiles/Image/Recipes/2016/Desserts%20and%20Sweets/April%202016/web%20-%20butterscotch%20icecream%20-%20ep%20227.jpg" 
+				alt="butterscotch">
+				</td>
+	</tr>	
+	<tr>
+				<td rowspan="0"><h2>Kulfis:</h2></td>
+				<td rowspan="0"><input type="checkbox"><span class="checkboxtext">Pista-7$</span>
+				<img src="http://ksmartstatic.sify.com/cmf-1.0.0/appflow/bawarchi.com/Image/oetbFvjeicehd_bigger.jpg" alt="Pista">
+				</td>
+				<td rowspan="0"><input type="checkbox"><span class="checkboxtext">Rose-8$</span>
+				<img src="https://vignette1.wikia.nocookie.net/icecream/images/e/e6/Rose_kulfi.jpg/revision/latest?cb=20150425085236" alt="Rose">
+				</td>
+				<td rowspan="0"><input type="checkbox"><span class="checkboxtext">Paan-9$</span>
+				<img src="https://i.pinimg.com/600x315/9b/9f/50/9b9f50fc36673057441f5a6bd49a3a63.jpg" alt="Paan">
+				</td>
+	</tr>
+	<tr>
+				<td rowspan="2"><h2>Sundaes:</h2></td>
+				<td rowspan="2"><input type="checkbox"><span class="checkboxtext">Chocolate-5$</span>
+				<img src="https://i.pinimg.com/736x/d9/bb/19/d9bb197855e903da7c02066043f19109.jpg" alt="chocolate">
+				</td>
+				<td rowspan="2"><input type="checkbox"><span class="checkboxtext">Mango-8$</span>
+				<img src="https://www.waitrose.com/content/dam/waitrose/recipes/images/m/0904r6.jpg/_jcr_content/renditions/cq5dam.thumbnail.400.400.png" alt="mango">
+				</td>
+				<td rowspan="2"><input type="checkbox"><span class="checkboxtext">Coffee-10$<span>
+				<img src="https://media-cdn.tripadvisor.com/media/photo-s/0b/95/fb/c3/coffee-sundae.jpg" alt="coffee">
+				</td>
+	</tr>
+	<tr>
+
+				<td rowspan="0"><h2>Thickshakes:</h2></td>
+				<td rowspan="0"><input type="checkbox"><span class="checkboxtext">Red Velvet-11$</span>
+				<img src="https://mumsgrapevine.com.au/site/wp-content/uploads/2015/06/Header_Milkshake.jpg" alt="red velvet">
+				</td>
+				<td rowspan="0"><input type="checkbox"><span class="checkboxtext">Oreo-20$</span>
+				<img src="http://icu.linter.fr/750/382758/3743551897/milk-shake-oreo.jpg" alt="oreo">
+				</td>
+				<td rowspan="0"><input type="checkbox"><span class="checkboxtext">Purple Velvet-15$</span>
+				<img src="https://www.scottgoodingproject.com/wp-content/uploads/2016/02/P2162469.jpg" alt="purple velvet">
+				</td>
+	</tr>
+	<tr>	
+				<td rowspan="2"><h2>Complete meal:</h2></td>
+				<td rowspan="2"><input type="checkbox"><span class="checkboxtext">Buttery Meal-10$</span>
+				<img src="https://cdn-image.myrecipes.com/sites/default/files/styles/medium_2x/public/image/recipes/su/06/11/ice-cream-su-682509-x.jpg?itok=-mqEzShS" alt="butter"><br>
+				</td>
+	</tr>	
+</table>
+<table>
+		<caption class="cart">Login/Sign Up</caption>
+			<tr>
+			<td><span class="textw">Name</span></td>
+			<td><input type="text" id="name1" onblur="check1()"></td>
+			</tr>
+
+			<tr>
+			<td><span class="textw">Date of Birth</span></td>
+			<td><input type="date" id="dob"></td>
+			</tr>
+
+			<tr>
+			<td><span class="textw">Create Password</span></td>
+			<td><input type="password" id="pass"></td>
+			</tr>
+
+			<tr>
+			<td><span class="testw">Re-enter Password</span></td>
+			<td><input type="password" id="passr" onblur="checkpass()"></td>
+			</tr>
+
+			<tr>
+			<td><span class="textw">Phone Number:</span></td>
+			<td><input type="number" id="pno" onblur="check2()"></td>
+			</tr>
+
+			<tr>
+			<td><span class="textw">E-mail</span></td>
+			<td><input type="email"></td>
+			</tr>
+
+			<tr>
+			<td><span class="textw">Address</span></td>
+			<td><input type="textbox"></td>
+			</tr>
+		</table>
+	<button onclick="loginid()">Done</button>
+<br>
+<h3>A regular customer?</h3>
+		<table>
+		
+		<tr>
+		<td>Enter login email id</td>
+		<td><input type="email"></td>
+		</tr>
+		
+		<tr>
+		<td>Enter password:</td>
+		<td><input type="password"></td>
+		</tr>
+		
+		<tr>
+		<td>or</td>
+		</tr>
+		
+		<tr>
+		<td>login by OTP sent to your registered phone number</td>
+		</tr>
+		
+		<tr>
+		<td>Enter Phone Number:</td>
+		<td><input type="number" size:"12"></td>
+		</tr>
+		
+		</table>
+		<br>
+<button onclick="otp()">Click here to send OTP</button>
+<br>
+<button onclick="cart.html">Proceed to Cart</button>
+</form>
+</body>
+</html>
